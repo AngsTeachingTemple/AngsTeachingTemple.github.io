@@ -15,6 +15,11 @@
      top: 250px;
 	 left: 53%
     }
+	#page {
+	position: absolute;
+	top: 250px;
+	left: 50%
+	}
 	</style>
 </head>
 <body>
@@ -24,6 +29,7 @@
 <p>Press the button below to continue.</p>
 </div>
 <button id="previous" onClick="previousPage()">Previous</button>
+<span id="page">1</span>
 <button id="next" onClick="nextPage()">Next</button>
 </body>
 <script>
@@ -43,4 +49,7 @@ page = page += 1
 document.getElementById('body').innerHTML = pageData[page - 1]
 }
 }
+setInterval(function () {
+document.getElementById('page').innerHTML = page
+}, 10);
 </script>
