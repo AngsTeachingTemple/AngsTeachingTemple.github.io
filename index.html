@@ -1,6 +1,14 @@
 <!DOCTYPE html><html>
 <head>
 <title>Ang's Teaching Temple</title>
+  <style>
+    #body {
+      text-align: center;
+    }
+    #test {
+     position: absolute;
+     top: 250;
+    }
 </head>
 <body>
 <div id="body">
@@ -8,13 +16,21 @@
 <p>Welcome to Ang's Teaching Temple.</p>
 <p>Press the button below to continue.</p>
 </div>
-<button onClick="nextPage()">Next</button>
+<button id="previous" onClick="previousPage()">Previous</button>
+<button id="next" onClick="nextPage()">Next</button>
 </body>
 <script>
 var page = 1
 var pageData = ["<h1>GREETINGS!</h1><p>Welcome to Ang's Teaching Temple.</p><p>Press the button below to continue.</p>", 
 "<h1>RULES</h1><p>1. You must praise Mr. Ang, our Lord.</p><p>2. You must listen and try to comprehend Mr. Ang's divine wisdom.</p><p>3. Be smart.</p>"]
+function previoustPage() {
+if (page !=< pageData.length - 1) {
+page = page -= 1
+document.getElementById('body').innerHTML = pageData[page]
+  }
+}
 function nextPage() {
+  if (page !=> pageData.length - 1) {
 document.getElementById('body').innerHTML = pageData[page]
 page = page += 1
 }
