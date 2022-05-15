@@ -42,7 +42,7 @@
 	}
 	</style>
 </head>
-<body id="background">
+<body id="thingy">
 <div id="body">
 <h1 class='h1'>GREETINGS!</h1>
 <p class='p'>Welcome to Ang's Teaching Temple.</p>
@@ -111,6 +111,14 @@ text = "A"
 }
 }
 
+function changeBackground() {
+if (back == "A") {
+alert('Why would you do this. Why would you change the background?')
+back = "B"
+} else if (back == "B") {
+back = "A"
+}
+}
 
 function viewTeachingNotes() {
 prefix = "A"
@@ -125,7 +133,7 @@ document.getElementById('body').innerHTML = settings
 }
 
 setInterval(function () {
-if (text == "A") {
+if (text == "A") { //If text is White
 var h1ele = document.getElementsByClassName("h1")
 var pele = document.getElementsByClassName("p")
 var spanele = document.getElementsByClassName("span")
@@ -139,7 +147,7 @@ pele[i].style.color = "black"
 for (let i = 0; i < spanele.length; i++) {
 spanele[i].style.color = "black"
 }
-} else if (text == "B") {
+} else if (text == "B") { //If text is Black
 var h1ele = document.getElementsByClassName("h1")
 var pele = document.getElementsByClassName("p")
 var spanele = document.getElementsByClassName("span")
@@ -155,6 +163,17 @@ spanele[i].style.color = "white"
 }
 }
 }, 10);
+
+setInterval(function () {
+if (back == "A") {
+document.getElementById('thingy').style.backgroundImage = 'url(images/jesang.png)'
+document.getElementById('thingy').style.backgroundColor = 'none'
+} else if (back == "B") {
+document.getElementById('thingy').style.backgroundImage = 'none'
+document.getElementById('thingy').style.backgroundColor = 'black'
+}
+}, 10);
+
 
 setInterval(function () {
 document.getElementById('page').innerHTML = prefix + page
