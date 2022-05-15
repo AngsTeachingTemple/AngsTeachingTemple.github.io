@@ -2,6 +2,10 @@
 <head>
 <title>Ang's Teaching Temple</title>
 	<style>
+	body {
+	background-image: url(images/jesang.png)
+	}
+	
     #body {
       text-align: center;
     }
@@ -21,43 +25,53 @@
 	left: 49.7%
 	}
 	p {
-	color: white
+	color: white;
+	font-weight: bolder
 	}
 	h1 {
-	color: white
+	color: white;
+	font-weight: bolder
 	}
 	span {
-	color: white
+	color: white;
+	font-weight: bolder
+	}
+	.text2 {
+	color: black;
+	font-weight: bolder
 	}
 	</style>
 </head>
-<body style="background-color:black">
+<body id="background">
 <div id="body">
-<h1>GREETINGS!</h1>
-<p>Welcome to Ang's Teaching Temple.</p>
-<p>Press the button below to continue.</p>
+<h1 class='h1'>GREETINGS!</h1>
+<p class='p'>Welcome to Ang's Teaching Temple.</p>
+<p class='p'>Press the button below to continue.</p>
 </div>
 <button id="previous" onClick="previousPage()">Previous</button>
-<span id="page">1</span>
+<span class='span' id="page">1</span>
 <button id="next" onClick="nextPage()">Next</button>
 </body>
 <script>
+var back = "A"
+var text = "A"
 var page = 1
 var prefix = ""
-var pageData = ["<h1>GREETINGS!</h1><p>Welcome to Ang's Teaching Temple.</p><p>Press the button below to continue.</p>", 
-"<h1>Ten CommANGments</h1><p>1. You must praise Ang, our Lord.</p><p>2. You must listen to Ang's divine wisdom.</p><p>3. Be smart.</p><p>4. Never talk back, or you will be exiled.</p><p>5. No matter what Ang says, you must agree.</p><p>6. If Ang enjoys/likes something or an activity, you must also enjoy it.</p><p>7. Being insulted by Ang is an honour.</p><p>8. Not finishing the teaching notes in a certain amount of time will get you punished.</p><p>9. You will be executed if you mispronounce or misspell Ang's name.</p><p>10. You will be subjected to a punishment worse than death if you insult, badmouth or attempt to injure Ang.</p>", 
-"<h1>CONTENTS</h1><p>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p>Other Stuff:&nbsp;&nbsp;&nbsp;<button>View</button></p>"]
+var pageData = ["<h1 class='h1'>GREETINGS!</h1><p class='p'>Welcome to Ang's Teaching Temple.</p><p class='p'>Press the button below to continue.</p>", 
+"<h1 class='h1'>Ten CommANGments</h1><p class='p'>1. You must praise Ang, our Lord.</p><p class='p'>2. You must listen to Ang's divine wisdom.</p><p class='p'>3. Be smart.</p><p class='p'>4. Never talk back, or you will be exiled.</p><p class='p'>5. No matter what Ang says, you must agree.</p><p class='p'>6. If Ang enjoys/likes something or an activity, you must also enjoy it.</p><p class='p'>7. Being insulted by Ang is an honour.</p><p class='p'>8. Not finishing the teaching notes in a certain amount of time will get you punished.</p><p class='p'>9. You will be executed if you mispronounce or misspell Ang's name.</p><p class='p'>10. You will be subjected to a punishment worse than death if you insult, badmouth or attempt to injure Ang.</p>", 
+"<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p>"
+];
 
-var teachingNotes = ["<h1>Algebra Terminology 10/05/2022</h1><p>In algebra, letters can be used to stand for numbers. A pronumeral is a letter that stands for a number.<br>If a pronumeral could represent any number rather than just one, it is also called a variable.<br>a x b is written as ab and a ÷ b is written as b. A term consists of numbers and pronumerals combined with multiplication or division.<br>For example, 5 is a term, x is a term, 9a is a term, abc is a term, 47z is a term.<br>A term that does not contain any pronumerals is called a constant term. All numbers by themselves are constant terms.<br>An (algebraic) expression consists of numbers and pronumerals combined with any mathematical operations.<br>For example, 3x + 2yz is an expression and 8 ÷ (3a — 2b) + 41 is also an expression. Any term is also an expression.<br>A coefficient is the number in front of a pronumeral. For example, the coefficient of y in the expression 8x + 2y + z is 2.<br>If there is no number in front, then the coefficient is 1, since 1 z and z are equal. </p>", 
-"<h1>Combining Like Terms 13/05/2022</h1><p>Like terms are terms containing exactly the same pronumerals, although not necessarily in the same order.<br>• 5ab and 3ab are like terms. • 4a and 7b are not like terms. • 2acb and 4bac are like terms.<br>Like terms can be combined within an expression to create a simpler expression that is equivalent.<br>For example, 5ab + 3ab can be simplified to 8ab. If two terms are not like terms (such as 4x and 5y),<br>they can still be added to get an expression like 4x + 5y, but this expression cannot be simplified further.</p>"
-]
+var teachingNotes = ["<h1 class='h1'>Algebra Terminology 10/05/2022</h1><p class='p'>In algebra, letters can be used to stand for numbers. A pronumeral is a letter that stands for a number.<br>If a pronumeral could represent any number rather than just one, it is also called a variable.<br>a x b is written as ab and a ÷ b is written as b. A term consists of numbers and pronumerals combined with multiplication or division.<br>For example, 5 is a term, x is a term, 9a is a term, abc is a term, 47z is a term.<br>A term that does not contain any pronumerals is called a constant term. All numbers by themselves are constant terms.<br>An (algebraic) expression consists of numbers and pronumerals combined with any mathematical operations.<br>For example, 3x + 2yz is an expression and 8 ÷ (3a — 2b) + 41 is also an expression. Any term is also an expression.<br>A coefficient is the number in front of a pronumeral. For example, the coefficient of y in the expression 8x + 2y + z is 2.<br>If there is no number in front, then the coefficient is 1, since 1 z and z are equal. </p>", 
+"<h1 class='h1'>Combining Like Terms 13/05/2022</h1><p class='p'>Like terms are terms containing exactly the same pronumerals, although not necessarily in the same order.<br>• 5ab and 3ab are like terms. • 4a and 7b are not like terms. • 2acb and 4bac are like terms.<br>Like terms can be combined within an expression to create a simpler expression that is equivalent.<br>For example, 5ab + 3ab can be simplified to 8ab. If two terms are not like terms (such as 4x and 5y),<br>they can still be added to get an expression like 4x + 5y, but this expression cannot be simplified further.</p>"
+];
 
-
+var settings = "<h1 class='h1'>Font Colour</h1><button onClick='changeFontColor()'>Change</button><h1 class='h1'>Background</h1><button onClick='changeBackground()'>Change</button>"
 
 function previousPage() {
 if (page > 1) {
 page = page -= 1
-if (prefix != "A") {
+if (prefix == "") {
 document.getElementById('body').innerHTML = pageData[page - 1]
 } else {
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
@@ -66,17 +80,21 @@ document.getElementById('body').innerHTML = teachingNotes[page - 1]
 prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
+} else if (prefix == "B") {
+prefix = ""
+page = pageData.length
+document.getElementById('body').innerHTML = pageData[page - 1]
 }
 }
 
 
 function nextPage() {
-if (prefix != "A") {
+if (prefix == "") {
 if (page < pageData.length) {
 page = page += 1
 document.getElementById('body').innerHTML = pageData[page - 1]
 }
-} else {
+} else if (prefix == "A") {
 if (page < teachingNotes.length) {
 page = page += 1
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
@@ -85,6 +103,13 @@ document.getElementById('body').innerHTML = teachingNotes[page - 1]
 
 }
 
+function changeFontColor() {
+if (text == "A") {
+text = "B"
+} else if (text == "B") {
+text = "A"
+}
+}
 
 
 function viewTeachingNotes() {
@@ -93,7 +118,49 @@ page = 1
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
 }
 
+function viewSettings() {
+prefix = "B"
+page = 1
+document.getElementById('body').innerHTML = settings
+}
+
+setInterval(function () {
+if (text == "A") {
+var h1ele = document.getElementsByClassName("h1")
+var pele = document.getElementsByClassName("p")
+var spanele = document.getElementsByClassName("span")
+
+for (let i = 0; i < h1ele.length; i++) {
+h1ele[i].style.color = "black"
+}
+for (let i = 0; i < pele.length; i++) {
+pele[i].style.color = "black"
+}
+for (let i = 0; i < spanele.length; i++) {
+spanele[i].style.color = "black"
+}
+} else if (text == "B") {
+var h1ele = document.getElementsByClassName("h1")
+var pele = document.getElementsByClassName("p")
+var spanele = document.getElementsByClassName("span")
+
+for (let i = 0; i < h1ele.length; i++) {
+h1ele[i].style.color = "white"
+}
+for (let i = 0; i < pele.length; i++) {
+pele[i].style.color = "white"
+}
+for (let i = 0; i < spanele.length; i++) {
+spanele[i].style.color = "white"
+}
+}
+}, 10);
+
 setInterval(function () {
 document.getElementById('page').innerHTML = prefix + page
 }, 10);
+
+window.addEventListener('load', (event) => {
+  document.getElementById('body').innerHTML = pageContent[page - 1]
+});
 </script>
