@@ -40,6 +40,11 @@
 	color: black;
 	font-weight: bolder
 	}
+	#sincont {
+	position: absolute;
+	top: 525px;
+	left: 48%
+	}
 	</style>
 </head>
 <body id="thingy">
@@ -51,6 +56,7 @@
 <button id="previous" onClick="previousPage()">Previous</button>
 <span class='span' id="page">1</span>
 <button id="next" onClick="nextPage()">Next</button>
+<p class="p" id="sincont">SINS: <span id="sins"class ="span">0</span></p>
 </body>
 <script>
 var sins = 0
@@ -179,6 +185,7 @@ document.getElementById('thingy').style.backgroundColor = 'black'
 
 setInterval(function () {
 document.getElementById('page').innerHTML = prefix + page
+document.getElementById('sins').innerHTML = sins
 }, 10);
 
 window.addEventListener('load', (event) => {
