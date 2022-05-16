@@ -182,8 +182,8 @@ document.getElementById('page').innerHTML = prefix + page
 }, 10);
 
 window.addEventListener('load', (event) => {
-	loadGame
-  document.getElementById('body').innerHTML = pageContent[page - 1]
+	loadData()
+	document.getElementById('body').innerHTML = pageContent[page - 1]
 });
 
 function loadData() {
