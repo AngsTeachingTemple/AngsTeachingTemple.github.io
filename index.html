@@ -121,8 +121,6 @@ text = "A"
 function changeBackground() {
 if (back == "A") {
 back = "B"
-alert('Why would you do this.')
-sins += 1
 } else if (back == "B") {
 back = "A"
 }
@@ -175,10 +173,8 @@ spanele[i].style.color = "white"
 setInterval(function () {
 if (back == "A") {
 document.getElementById('thingy').style.backgroundImage = 'url(images/jesang.png)'
-document.getElementById('thingy').style.backgroundColor = 'none'
 } else if (back == "B") {
-document.getElementById('thingy').style.backgroundImage = 'none'
-document.getElementById('thingy').style.backgroundColor = 'black'
+document.getElementById('thingy').style.backgroundImage = 'url(images/gang.png)'
 }
 }, 10);
 
@@ -189,18 +185,6 @@ document.getElementById('sins').innerHTML = sins
 }, 10);
 
 window.addEventListener('load', (event) => {
-	loadData()
 	document.getElementById('body').innerHTML = pageContent[page - 1]
 });
-
-function loadData() {
-				var savedData = JSON.parse(localStorage.getItem("dataSave"));
-				if (typeof savedData.sins !== "undefined") sins = savedData.sins;
-			}
-function saveData() {
-				var savedData = {
-					sins: sins
-				};
-				localStorage.setItem("dataSave", JSON.stringify(savedData));
-			}
 </script>
