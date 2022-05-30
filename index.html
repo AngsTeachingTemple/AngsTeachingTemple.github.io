@@ -77,9 +77,11 @@ var pageData = [
 ];
 
 var teachingNotes = [
-"<h1 class='h1'>Algebra Terminology 10/05/2022</h1><p><img src='images/100522.png'></p>", 
+"<h1 class='h1'>Algebra Terminology 10/05/2022</h1><p><img src='images/100522.png'></p>",
 "<h1 class='h1'>Combining Like Terms 13/05/2022</h1><p class='p'><img src='images/130522.png'></p>",
-"<h1 class='h1'>Multiplying and Dividing Algebraic Terms 17/05/22</h1><p><img src='images/170522.png'></h1>"
+"<h1 class='h1'>Multiplying and Dividing Algebraic Terms 17/05/2022</h1><p><img src='images/170522.png'></h1>",
+"<h1 class='h1'>Expanding Brackets 24/05/2022</h1><p class='p'><img src='images/240522.png'></p>",
+"<h1 class='h1'>Factorising Expressions 26/05/2022</h1><p><img src='images/260522.png'></h1>"
 ];
 
 var settings = "<h1 class='h1'>Font Colour</h1><button onClick='changeFontColor()'>Change</button><h1 class='h1'>Background</h1><button onClick='changeBackground()'>Change</button>"
@@ -278,6 +280,6 @@ document.getElementById('sins').innerHTML = sins
 }, 10);
 
 window.addEventListener('load', (event) => {
-	document.getElementById('body').innerHTML = pageContent[page - 1]
+	console.log('Started')
 });
 </script>
