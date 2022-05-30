@@ -73,7 +73,7 @@ var prefix = ""
 var pageData = [
 "<h1 class='h1'>GREETINGS!</h1><p class='p'>Welcome to Ang's Teaching Temple.</p><p class='p'>Press the button below to continue.</p>", 
 "<h1 class='h1'>Ten CommANGments</h1><p class='p'>1. You must praise Ang, our Lord.</p><p class='p'>2. You must listen to Ang's divine wisdom.</p><p class='p'>3. Be smart.</p><p class='p'>4. Never talk back, or you will be exiled.</p><p class='p'>5. No matter what Ang says, you must agree.</p><p class='p'>6. If Ang enjoys/likes something or an activity, you must also enjoy it.</p><p class='p'>7. Being insulted by Ang is an honour.</p><p class='p'>8. Not finishing the teaching notes in a certain amount of time will get you punished.</p><p class='p'>9. You will be executed if you mispronounce or misspell Ang's name.</p><p class='p'>10. You will be subjected to a punishment worse than death if you insult, badmouth or attempt to injure Ang.</p>", 
-"<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p><p class='p'>Test:&nbsp;&nbsp;&nbsp;<button onClick='viewTest()'>View</button></p>"
+"<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p><p class='p'>Test:&nbsp;&nbsp;&nbsp;<button onClick='viewTest()'>View</button></p><p class='p'>Random Quote: <button onClick='viewQuotes()'>View</button></p>"
 ];
 
 var teachingNotes = [
@@ -91,6 +91,15 @@ var test = [
 "<h1 class='h1'>Quantify Ang's power.</h1><p class='p'><button onClick='answerA()'>A. 1,000 N of force</button><button onClick='answerB()'>B. a̷̡̧̟̪̪̺͔̭̭̱̫̦̤̣̫̤̪͔͕̠̽̒̓̏̋͋̇̀̃̈̂̓̑̿̀͊̒̌̒̽͊͘̕͝͝͠ͅb̴̩͕͒͗͑̆̉̀̉͆̋̇̎̃̌̽͊͘͝s̷̨̧̮̯̭͇̀͂̐̾̇̓̐̋͘̕̚ͅd̴̢̝̖͔̟̻̥̘̗̟̑̍̑͘W̶̨̡̨̡̧̛̦͖̼̻̼̹̠̞̯̘͓̪͓̠̼͍͖͕̺̘̖͊͒ͅd̶̨̨̨̧̡̧͈͎̞̹̹͖̗̺̜͖̯̮̜͎͗̏̈̄͋͂͑̐͋̅̊͗͐́̀̈́͊̍̉̎͑̎͜͝ͅṡ̴̡̛̹͇͓̣̰̠̻͎̮͉̠̗̤̠̥͉̠̉̈́̓̎͌̀̃̔̽̽͆̔̈̒̃͌͛̃̿͗̊͊͗͘̚͘a̸̛̯̱̻̣̫̗̲͌̂͊̒͌̓͒̉̀̊̇̈́̄̔̊̃̏̑͗̃͒̎̌̾̕͘͠͝ͅ  N of force</button></p><p class='p'><button onClick='answerC()'>C. 50 N of force</button><button onClick='answerD()'>D. 10 N of force</button></p>",
 "<h1 class='h1'>What is Ang's day of birth?</h1><p class='p'><button onClick='answerA()'>A. 13th of July</button><button onClick='answerB()'>B. 29th of January</button></p><p class='p'><button onClick='answerC()'>C. 11th of May</button><button onClick='answerD()'>D. 28th of March</button></p>"
 ];
+
+
+var quotes = [
+"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"Just stop capping!\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"I have said shut up in class.\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"I foiled your plan\"<br>- Ang</p>"
+];
+
+
 
 function previousPage() {
 if (page > 1) {
@@ -188,6 +197,12 @@ document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p 
 } else {
 document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got at least one of the answers wrong. This is a crime. You are being hunted down.</p>"
 }
+}
+
+function viewQuotes() {
+prefix = "E"
+page = 1
+document.getElementById('body').innerHTML = quotes[page - 1]
 }
 
 function answerA() {
