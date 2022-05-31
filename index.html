@@ -48,6 +48,11 @@
 	top: 525px;
 	left: 48%
 	}
+	
+	#quote {
+	font-size: 64px;
+	}
+	
 	</style>
 </head>
 <body id="thingy">
@@ -94,9 +99,13 @@ var test = [
 
 
 var quotes = [
-"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"Just stop capping!\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"I have said shut up in class.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><br><br><br><br><p class='p'>\"I foiled your plan\"<br>- Ang</p>"
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Just stop capping!\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"I have said shut up in class.\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"I foiled your plan\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"If you don't follow my instructions why should I follow yours?\"<br>- Ang</p>", 
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"*Dissapointed sigh*\"<br>- Ang</p>", 
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Mediocre? Just like your test.\"<br>- Ang</p>", 
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Stop being such a smartass.\"<br>- Ang</p>"
 ];
 
 
@@ -202,7 +211,7 @@ document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p 
 function viewQuotes() {
 prefix = "E"
 page = 1
-document.getElementById('body').innerHTML = quotes[page - 1]
+document.getElementById('body').innerHTML = randomQuote()
 }
 
 function answerA() {
@@ -287,6 +296,12 @@ document.getElementById('thingy').style.backgroundImage = 'url(images/monanglisa
 document.getElementById('thingy').style.backgroundImage = 'url(images/angsupper.png)'
 }
 }, 10);
+
+
+function randomQuote() {
+return quotes[quotes.length * Math.random() | 0]
+}
+
 
 
 setInterval(function () {
