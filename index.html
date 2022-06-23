@@ -86,8 +86,7 @@ var teachingNotes = [
 "<h1 class='h1'>Combining Like Terms 13/05/2022</h1><p class='p'><img src='images/130522.png'></p>",
 "<h1 class='h1'>Multiplying and Dividing Algebraic Terms 17/05/2022</h1><p><img src='images/170522.png'></h1>",
 "<h1 class='h1'>Expanding Brackets 24/05/2022</h1><p class='p'><img src='images/240522.png'></p>",
-"<h1 class='h1'>Factorising Expressions 26/05/2022</h1><p><img src='images/260522.png'></h1>",
-"<h1 class='h1'>Solving Linear Equations 21/06/2022</h1><p><img src='images/210622.png'></h1>"
+"<h1 class='h1'>Factorising Expressions 26/05/2022</h1><p><img src='images/260522.png'></h1>"
 ];
 
 var settings = "<h1 class='h1'>Font Colour</h1><button onClick='changeFontColor()'>Change</button><h1 class='h1'>Background</h1><button onClick='changeBackground()'>Change</button>"
@@ -109,7 +108,9 @@ var quotes = [
 "<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Stop being such a smartass.\"<br>- Ang</p>",
 "<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"When did I ask?\"<br>- Ang</p>",
 "<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Who asked?\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"That's BS.\"<br>- Ang</p>"
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"That's BS.\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Nobody looks at  math and smiles.\"<br>- Ang</p>",
+"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Are you calling me a bully? Takes one to know one.\"<br>- Ang</p>"
 ];
 
 
@@ -157,6 +158,8 @@ if (page < teachingNotes.length) {
 page = page += 1
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
 }
+} else if (prefix == "E") {
+viewQuotes()
 }
 
 }
