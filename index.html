@@ -205,13 +205,13 @@ document.getElementById('body').innerHTML = test[page - 1]
 function viewTestResult() {
 prefix = "D"
 page = 1
+counter[0] = 0
 for (let i = 0; i < correctAnswers.length; i++) {
 if (answers[i] == correctAnswers[i]) {
-counter.length = 0
-counter.push(i)
-}
-}
 counter[0] += 1
+}
+}
+
 if (counter[0] == correctAnswers.length) {
 document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got all the answers correct!</p>"
 } else {
