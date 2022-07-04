@@ -174,6 +174,8 @@ function changeFontColor() {
 if (text == "A") {
 text = "B"
 } else if (text == "B") {
+text = "C"
+} else if ( text == "C") {
 text = "A"
 }
 }
@@ -271,7 +273,7 @@ viewTestResult()
 
 
 setInterval(function () {
-if (text == "A") { //If text is White
+if (text == "A") { //If text is Black
 var h1ele = document.getElementsByClassName("h1")
 var pele = document.getElementsByClassName("p")
 var spanele = document.getElementsByClassName("span")
@@ -285,7 +287,7 @@ pele[i].style.color = "black"
 for (let i = 0; i < spanele.length; i++) {
 spanele[i].style.color = "black"
 }
-} else if (text == "B") { //If text is Black
+} else if (text == "B") { //If text is White
 var h1ele = document.getElementsByClassName("h1")
 var pele = document.getElementsByClassName("p")
 var spanele = document.getElementsByClassName("span")
@@ -298,6 +300,20 @@ pele[i].style.color = "white"
 }
 for (let i = 0; i < spanele.length; i++) {
 spanele[i].style.color = "white"
+}
+} else if (text == "C") { //If text is Gray
+var h1ele = document.getElementsByClassName("h1")
+var pele = document.getElementsByClassName("p")
+var spanele = document.getElementsByClassName("span")
+
+for (let i = 0; i < h1ele.length; i++) {
+h1ele[i].style.color = "gray"
+}
+for (let i = 0; i < pele.length; i++) {
+pele[i].style.color = "gray"
+}
+for (let i = 0; i < spanele.length; i++) {
+spanele[i].style.color = "gray"
 }
 }
 }, 10);
