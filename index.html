@@ -99,26 +99,26 @@ var test = [
 
 
 var quotes = [
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Just stop capping!\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"I have said shut up in class.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"I foiled your plan\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"If you don't follow my instructions why should I follow yours?\"<br>- Ang</p>", 
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"*Disappointed sigh*\"<br>- Ang</p>", 
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Mediocre. Just like your test.\"<br>- Ang</p>", 
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Stop being such a smartass.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"When did I ask?\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Who asked?\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"That's BS.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Nobody looks at  math and smiles.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Are you calling me a bully? Takes one to know one.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"You foiled my artwork.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Stop being sus.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Too much information! Stop it!\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Takes one to know one.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"I don't care. I didn't ask either.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"You're disrupting the class. I don't appreciate it.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Shut up and listen.\"<br>- Ang</p>",
-"<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"Are you sure about that?\"<br>- Ang</p>"
+"Just stop capping!",
+"I have said shut up in class.",
+"I foiled your plan",
+"If you don't follow my instructions why should I follow yours?\"<br>- Ang</p>", 
+"*Disappointed sigh*", 
+"Mediocre. Just like your test.", 
+"Stop being such a smartass.",
+"When did I ask?",
+"Who asked?",
+"That's BS.",
+"Nobody looks at  math and smiles.",
+"Are you calling me a bully? Takes one to know one.",
+"You foiled my artwork.",
+"Stop being sus.",
+"Too much information! Stop it!",
+"Takes one to know one.",
+"I don't care. I didn't ask either.",
+"You're disrupting the class. I don't appreciate it.",
+"Shut up and listen.",
+"Are you sure about that?"
 ];
 
 
@@ -236,7 +236,7 @@ document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p 
 function viewQuotes() {
 prefix = "E"
 page = 1
-document.getElementById('body').innerHTML = randomQuote()
+document.getElementById('body').innerHTML = "<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"" + randomQuote() + "\"<br>- Ang</p>"
 }
 
 function answerA() {
