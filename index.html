@@ -78,7 +78,7 @@ var prefix = ""
 var pageData = [
 "<h1 class='h1'>GREETINGS!</h1><p class='p'>Welcome to Ang's Teaching Temple.</p><p class='p'>Press the button below to continue.</p>", 
 "<h1 class='h1'>Ten CommANGments</h1><p class='p'>1. You must praise Ang, our Lord.</p><p class='p'>2. You must listen to Ang's divine wisdom.</p><p class='p'>3. Be smart.</p><p class='p'>4. Never talk back, or you will be exiled.</p><p class='p'>5. No matter what Ang says, you must agree.</p><p class='p'>6. If Ang enjoys/likes something or an activity, you must also enjoy it.</p><p class='p'>7. Being insulted by Ang is an honour.</p><p class='p'>8. Not finishing the teaching notes in a certain amount of time will get you punished.</p><p class='p'>9. You will be executed if you mispronounce or misspell Ang's name.</p><p class='p'>10. You will be subjected to a punishment worse than death if you insult, badmouth or attempt to injure Ang.</p>", 
-"<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p><p class='p'>Test:&nbsp;&nbsp;&nbsp;<button onClick='viewTest()'>View</button></p><p class='p'>Random Quote: <button onClick='viewQuotes()'>View</button></p><p class='p'>Ang Extension: <a class='button' href='angextension.zip' download>Download</a>"
+"<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p><p class='p'>Test:&nbsp;&nbsp;&nbsp;<button onClick='viewTest()'>View</button></p><p class='p'>Random Quote: <button onClick='viewQuotes()'>View</button></p><p class='p'>Website Changelog: <button onClick='viewChangelog()'>View</button><p class='p'>Ang Extension: <a class='button' href='angextension.zip' download>Download</a>"
 ];
 
 var teachingNotes = [
@@ -98,6 +98,11 @@ var test = [
 ];
 
 
+//Add new to the top, not bottom.
+var changelog = [
+"25/08/2022: Changelog added, 2 new quotes added, bringing the total to 26."
+]
+
 var quotes = [
 "Just stop capping!",
 "I have said shut up in class.",
@@ -108,7 +113,7 @@ var quotes = [
 "Stop being such a smartass.",
 "When did I ask?",
 "Who asked?",
-"That's BS.",
+"That's BS.", //10
 "Nobody looks at  math and smiles.",
 "Are you calling me a bully? Takes one to know one.",
 "You foiled my artwork.",
@@ -118,11 +123,13 @@ var quotes = [
 "I don't care. I didn't ask either.",
 "You're disrupting the class. I don't appreciate it.",
 "Shut up and listen.",
-"Are you sure about that?",
+"Are you sure about that?", //20
 "Do your revision now!",
 "You do, and always will, need help.",
 "Fahad KHAN you shut up?",
-"Tell someone who cares."
+"Tell someone who cares.",
+"I have been waiting.",
+"#WhenDidIAsk?"
 ];
 
 
@@ -156,6 +163,10 @@ prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
 } else if (prefix == "F") {
+prefix = ""
+page = pageData.length
+document.getElementById('body').innerHTML = pageData[page - 1]
+} else if (prefix == "G") {
 prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
@@ -241,6 +252,19 @@ function viewQuotes() {
 prefix = "E"
 page = 1
 document.getElementById('body').innerHTML = "<h1 class='h1'>Random Quote</h1><br><p class='p' id='quote'>\"" + randomQuote() + "\"<br>- Ang</p>"
+}
+
+
+//WORK
+
+function viewChangelog() {
+let temp = ""
+
+for (let i = 0; i < changelog.length; i++) {
+temp += "<p class='p'>" + changelog[i] + "</p><br>"
+}
+
+document.getElementById('body').innerHTML = temp
 }
 
 function answerA() {
