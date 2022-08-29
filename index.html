@@ -383,11 +383,11 @@ window.addEventListener('load', (event) => {
 
 
 
-window.addEventListener("onkeydown", function(event) {
-	if (event.keyCode == 39) {
+window.addEventListener("keydown", function(event) {
+	if (event.code == "ArrowRight") {
 		nextPage()
 	}
-	if (event.keyCode == 37) {
+	if (event.code == "ArrowLeft") {
 		previousPage()
 	}
 });
