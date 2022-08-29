@@ -98,7 +98,7 @@ var test = [
 ];
 
 
-//Add new to the top, not bottom.
+//The newer they are, the higher up in the list
 var changelog = [
 "25/08/2022: Changelog added, 2 new quotes added, bringing the total to 26."
 ]
@@ -378,5 +378,16 @@ document.getElementById('sins').innerHTML = sins
 
 window.addEventListener('load', (event) => {
 	console.log('Started')
+});
+
+
+
+window.addEventListener("onkeydown", function(event) {
+	if (event.keyCode == 39) {
+		nextPage()
+	}
+	if (event.keyCode == 37) {
+		previousPage()
+	}
 });
 </script>
