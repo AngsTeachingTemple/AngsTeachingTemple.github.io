@@ -163,10 +163,10 @@ document.getElementById('body').innerHTML = pageData[page - 1]
 } else if (prefix == "C") {
 	if (page > 1) {
 	page -= 1
-	document.getElementById('body').innerHTML = questions[page - 1]
+	document.getElementById('body').innerHTML = test[page - 1]
 	} else {
 	page = pageData.length
-	document.getElementById('body').innerHTML = questions[page - 1]
+	document.getElementById('body').innerHTML = test[page - 1]
 	}
 } else if (prefix == "D") {
 prefix = ""
@@ -202,7 +202,7 @@ document.getElementById('body').innerHTML = teachingNotes[page - 1]
 } else if (prefix == "C") {
 if (page != correctAnswers.length) {
 page += 1
-document.getElementById('body').innerHTML = questions[page - 1]
+document.getElementById('body').innerHTML = test[page - 1]
 } else {
 viewTestResult()
 }
