@@ -149,7 +149,7 @@ if (page > 1) {
 page = page -= 1
 if (prefix == "") {
 document.getElementById('body').innerHTML = pageData[page - 1]
-} else {
+} else if (prefix == "A") {
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
 }
 } else if (prefix == "A") {
