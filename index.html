@@ -160,9 +160,13 @@ prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
 } else if (prefix == "C") {
-prefix = ""
-page = pageData.length
-document.getElementById('body').innerHTML = pageData[page - 1]
+	if (page > 1) {
+	page -= 1
+	document.getElementById('body').innerHTML = questions[page - 1]
+	} else {
+	page = pageData.length
+	document.getElementById('body').innerHTML = questions[page - 1]
+	}
 } else if (prefix == "D") {
 prefix = ""
 page = pageData.length
@@ -186,14 +190,22 @@ document.getElementById('body').innerHTML = pageData[page - 1]
 function nextPage() {
 if (prefix == "") {
 if (page < pageData.length) {
-page = page += 1
+page += 1
 document.getElementById('body').innerHTML = pageData[page - 1]
 }
 } else if (prefix == "A") {
 if (page < teachingNotes.length) {
-page = page += 1
+page += 1
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
 }
+} else if (prefix == "C") {
+if (page != correctAnswers.length) {
+page += 1
+document.getElementById('body').innerHTML = questions[page - 1]
+} else {
+viewTestResult()
+}
+
 } else if (prefix == "E") {
 viewQuotes()
 }
@@ -280,42 +292,40 @@ document.getElementById('body').innerHTML = temp
 }
 
 function answerA() {
+if (answers.length == page - 1) {
 answers.push("A")
-if (page != (test.length)) {
-page += 1
-document.getElementById('body').innerHTML = test[page - 1]
 } else {
-viewTestResult()
+answers[page - 1] = "A"
 }
-}
-function answerB() {
-answers.push("B")
-if (page != (test.length)) {
-page += 1
-document.getElementById('body').innerHTML = test[page - 1]
-} else {
-viewTestResult()
-}
-}
-function answerC() {
-answers.push("C")
-if (page != (test.length)) {
-page += 1
-document.getElementById('body').innerHTML = test[page - 1]
-} else {
-viewTestResult()
-}
-}
-function answerD() {
-answers.push("D")
-if (page != (test.length)) {
-page += 1
-document.getElementById('body').innerHTML = test[page - 1]
-} else {
-viewTestResult()
-}
+nextPage()
 }
 
+function answerB() {
+if (answers.length == page - 1) {
+answers.push("B")
+} else {
+answers[page - 1] = "B"
+}
+nextPage()
+}
+
+function answerC() {
+if (answers.length == page - 1) {
+answers.push("C")
+} else {
+answers[page - 1] = "C"
+}
+nextPage()
+}
+
+function answerD() {
+if (answers.length == page - 1) {
+answers.push("D")
+} else {
+answers[page - 1] = "D"
+}
+nextPage()
+}
 
 
 setInterval(function () {
