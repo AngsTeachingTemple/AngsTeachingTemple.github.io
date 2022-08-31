@@ -272,7 +272,7 @@ counter[0] += 1
 if (counter[0] == correctAnswers.length) {
 document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got all the answers correct!</p>"
 } else {
-document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got at least one of the answers wrong. This is a crime. You are being hunted down.</p>"
+document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got " + (correctAnswers.length - counter[0]) + " of the answers wrong. This is a crime. You are being hunted down.</p>"
 }
 }
 
