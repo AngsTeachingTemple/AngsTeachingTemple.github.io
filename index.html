@@ -149,10 +149,14 @@ if (page > 1) {
 page = page -= 1
 if (prefix == "") {
 document.getElementById('body').innerHTML = pageData[page - 1]
+break
 } else if (prefix == "A") {
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
+break
 }
-} else if (prefix == "A") {
+break
+}
+if (prefix == "A") {
 prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
