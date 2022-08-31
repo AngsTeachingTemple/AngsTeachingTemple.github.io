@@ -149,14 +149,12 @@ if (page > 1) {
 page = page -= 1
 if (prefix == "") {
 document.getElementById('body').innerHTML = pageData[page - 1]
-break
 } else if (prefix == "A") {
 document.getElementById('body').innerHTML = teachingNotes[page - 1]
-break
+} else if (prefix == "C") {
+document.getElementById('body').innerHTML = test[page - 1]
 }
-break
-}
-if (prefix == "A") {
+} else if (prefix == "A") {
 prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
@@ -165,13 +163,8 @@ prefix = ""
 page = pageData.length
 document.getElementById('body').innerHTML = pageData[page - 1]
 } else if (prefix == "C") {
-	if (page != 1) {
-	page -= 1
-	document.getElementById('body').innerHTML = test[page - 1]
-	} else {
-	page = pageData.length
-	document.getElementById('body').innerHTML = pageData[page - 1]
-	}
+page = pageData.length
+document.getElementById('body').innerHTML = pageData[page - 1]
 } else if (prefix == "D") {
 prefix = ""
 page = pageData.length
@@ -397,7 +390,11 @@ window.addEventListener('load', (event) => {
 	console.log('Started')
 });
 
-
+setInterval(function() {
+if (prefix == "C") {
+document.getElementById('body').innerHTML = test[page - 1]
+}
+}, 100)
 
 window.addEventListener("keydown", function(event) {
 	if (event.code == "ArrowRight") {
