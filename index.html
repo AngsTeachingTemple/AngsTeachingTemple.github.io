@@ -392,12 +392,6 @@ window.addEventListener('load', (event) => {
 	console.log('Started')
 });
 
-setInterval(function() {
-if (prefix == "C") {
-document.getElementById('body').innerHTML = test[page - 1]
-}
-}, 100)
-
 window.addEventListener("keydown", function(event) {
 	if (event.code == "ArrowRight") {
 		nextPage()
