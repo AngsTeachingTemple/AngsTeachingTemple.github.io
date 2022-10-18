@@ -421,7 +421,7 @@ function saveData() {
 
 function loadData() {
 	var data = JSON.parse(localStorage.getItem("angData"));
-	if (typeof data.sins !== "undefined") sins = data.sins;
+	if (typeof data.sins != null) sins = data.sins;
 }
 
 window.addEventListener("load", function() {loadData()})
