@@ -274,6 +274,7 @@ document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p 
 } else {
 document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got " + (correctAnswers.length - counter[0]) + " of the answers wrong. This is a crime. You are being hunted down.</p>"
 }
+sins += correctAnswers.length - counter[0]
 }
 
 function viewQuotes() {
@@ -400,4 +401,5 @@ window.addEventListener("keydown", function(event) {
 		previousPage()
 	}
 });
+</script>
 </script>
