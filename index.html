@@ -102,7 +102,7 @@ var test = [
 
 //The newer they are, the higher up in the list
 var changelog = [
-"18/10/2022: Added the ability to get sins by getting answers on the test wrong.",
+"18/10/2022: Added the ability to get sins by getting answers on the test wrong. Also, sins save.",
 "31/08/2022: Fixed the large glitches in the revamped test system that happened since I was too tired to test.<br>If you get an answer wrong, it now shows you how many you have wrong instead of just saying 'at least one'.",
 "30/08/2022: Revamped the test system, you can now go back and change your answers.",
 "29/08/2022: Ang's Teaching Temple now has over 400 lines of code!<br>Arrow keys added to change pages (works on quotes).<br>Hold arrow keys to rapidly change pages/quotes.<br>Two additional questions added to the test. 6 more quotes added, bringing the total up to 32!",
@@ -273,7 +273,7 @@ counter[0] += 1
 if (counter[0] == correctAnswers.length) {
 document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got all the answers correct!</p>"
 } else {
-document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got " + (correctAnswers.length - counter[0]) + " of the answers wrong. This is a crime. You are being hunted down.<br>+${correctAnswers.length - counter[0] Sins.</p>"
+document.getElementById('body').innerHTML = "<h1 class='h1'>TEST RESULTS</h1><p class='p'>You got " + (correctAnswers.length - counter[0]) + " of the answers wrong. This is a crime. You are being hunted down.<br>+" + (correctAnswers.length - counter[0]) + " Sins.</p>"
 }
 sins += correctAnswers.length - counter[0]
 }
@@ -384,11 +384,19 @@ return quotes[quotes.length * Math.random() | 0]
 }
 
 
-
+var previousSins = 0
 setInterval(function () {
 document.getElementById('page').innerHTML = prefix + page
-document.getElementById('sins').innerHTML = sins
+if (previousSins < sins) {
+updateSins()
+}
+previousSins = sins
 }, 10);
+
+function updateSins() {
+document.getElementById('sins').innerHTML = sins
+saveData()
+}
 
 window.addEventListener('load', (event) => {
 	console.log('Started')
@@ -402,5 +410,20 @@ window.addEventListener("keydown", function(event) {
 		previousPage()
 	}
 });
+
+function saveData() {
+	var data = {
+		sins: sins
+	}
+	
+	localStorage.setItem("angData", JSON.stringify(data))
+}
+
+function loadData() {
+	var data = JSON.parse(localStorage.getItem("angData"));
+	if (typeof data.sins !== "undefined") sins = data.sins;
+}
+
+window.addEventListener("load", function() {loadData()})
 </script>
 </script>
