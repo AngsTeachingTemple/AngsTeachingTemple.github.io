@@ -1,4 +1,4 @@
-var quotes = [
+var quotes = [ 
 "Just stop capping!",
 "I have said shut up in class.",
 "I foiled your plan",
