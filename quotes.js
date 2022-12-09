@@ -44,4 +44,6 @@ var quotes = [
 "Bro??",
 "Tape your mouth up!",
 "Another day, another slay."
+"#ListenToTheTeacher",
+"I will mentally mark your work",
 ];
