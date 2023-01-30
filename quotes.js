@@ -2,7 +2,7 @@ const quotes = [
 "Just stop capping!",
 "I have said shut up in class.",
 "I foiled your plan",
-"If you don't follow my instructions why should I follow yours?\"<br>- Ang</p>", 
+"If you don't my instructions why should I follow yours?\"<br>- Ang</p>", 
 "*Disappointed sigh*", 
 "Mediocre. Just like your test.", 
 "Stop being such a smartass.",
