@@ -57,7 +57,7 @@ const quotes = [
 "Are you guys dads?",
 "I liked the pun",
 "Soumil I think the water is running for you",
-"You foiled my plan :(",
+"You foiled my plan",
 "Who? ASKED",
 "欠打？",
 "CD’s???!",
