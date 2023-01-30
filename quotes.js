@@ -28,7 +28,7 @@ const quotes = [
 "I sleep great at night, after I said that.",
 "What happened to shutting up?",
 "You do, and always will, need help.",
-"“Do thy revision now!” Thus sayeth Ang!", //30
+"“Do thy revision now!" Thus sayeth Ang!", //30
 "Oh sorry, you’re not year 7s, you're 7 year olds.",
 "You behave like 7 year olds.",
 "Hey, don’t complain.",
@@ -72,21 +72,21 @@ const quotes = [
 "Are you being rash-ist?",
 "Did you want moeed to call you daddy?",
 "Ian's phone and Soumil's watch are both dirty in different ways",
-"The horse used to drive the cart, but now the cart drives the horse. How the stables have turned”,
-"You sound like you’re enjoying it”,
-"Yushi, you pastry”,
-"Shoulda gone to specsavers”,
-"Cry me a river”,
-"My observation is that you can’t shut up for long enough”,
-"Time is passing, are you?”,
-"Smh”,
-"Joe. Joe mama”,
-"Well mode’s the most common one”,
-"Can you stop being a dog?”,
-"Stawwwp it!”,
-"Casper you better make sure you do good in school or else you won’t get any babies”,
-"Fahad is just a clown”,
-"Speaking to NOBODY IN PARTICULAR *stares at Renee*” 
-"That was so 2015”,
-"I will mentally mark your work”
+"The horse used to drive the cart, but now the cart drives the horse. How the stables have turned",
+"You sound like you’re enjoying it",
+"Yushi, you pastry",
+"Shoulda gone to specsavers",
+"Cry me a river",
+"My observation is that you can’t shut up for long enough",
+"Time is passing, are you?",
+"Smh",
+"Joe. Joe mama",
+"Well mode’s the most common one",
+"Can you stop being a dog?",
+"Stawwwp it!",
+"Casper you better make sure you do good in school or else you won’t get any babies",
+"Fahad is just a clown",
+"Speaking to NOBODY IN PARTICULAR *stares at Renee*" 
+"That was so 2015",
+"I will mentally mark your work"
 ];
