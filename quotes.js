@@ -86,7 +86,7 @@ const quotes = [
 "Stawwwp it!",
 "Casper you better make sure you do good in school or else you won’t get any babies",
 "Fahad is just a clown",
-"Speaking to NOBODY IN PARTICULAR *stares at Renee*" 
+"Speaking to NOBODY IN PARTICULAR *stares at Renee*",
 "That was so 2015",
 "I will mentally mark your work"
 ];
