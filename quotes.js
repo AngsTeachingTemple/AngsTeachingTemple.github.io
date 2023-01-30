@@ -28,8 +28,8 @@ const quotes = [
 "I sleep great at night, after I said that.",
 "What happened to shutting up?",
 "You do, and always will, need help.",
-"“Do thy revision now!" Thus sayeth Ang!", //30
-"Oh sorry, you’re not year 7s, you're 7 year olds.",
+"\"Do thy revision now!\" Thus sayeth Ang!", //30
+"Oh sorry, you’re not year 7's, you're 7 year olds.",
 "You behave like 7 year olds.",
 "Hey, don’t complain.",
 "请你闭嘴。",
