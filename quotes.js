@@ -88,5 +88,8 @@ const quotes = [
 "Fahad is just a clown",
 "Speaking to NOBODY IN PARTICULAR *stares at Renee*",
 "That was so 2015",
-"I will mentally mark your work"
+"I will mentally mark your work",
+"And my 800 math students will know what to do when someone is talking - shut up",
+"You played it and you blamed it on Zane, that’s a dog move",
+"Shut up and listen, and I mean the shut up part"
 ];
