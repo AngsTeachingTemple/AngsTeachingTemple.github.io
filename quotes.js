@@ -72,7 +72,7 @@ const quotes = [
 "You sound like you’re enjoying it",
 "Yushi, you pastry",
 "Shoulda gone to specsavers",
-"Cry me a river”,
+"Cry me a river",
 "My observation is that you can’t shut up for long enough",
 "Time is passing, are you?",
 "Smh",
