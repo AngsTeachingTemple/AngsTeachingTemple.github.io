@@ -86,5 +86,8 @@ const quotes = [
 "I will mentally mark your work",
 "And my 800 math students will know what to do when someone is talking",
 "Shut up and listen, and I mean the shut up part",
-"You played it and you blamed it on Zane, that’s a dog move" //88
+"You played it and you blamed it on Zane, that’s a dog move",
+"You're 134? What’s your skin care routine?",
+"You’re being sarcastic so I’m being sarcastic back at you", //90
+"Believe me, there's so many students I would like to hit"
 ];
