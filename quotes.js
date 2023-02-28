@@ -89,5 +89,8 @@ const quotes = [
 "You played it and you blamed it on Zane, that’s a dog move",
 "You're 134? What’s your skin care routine?",
 "You’re being sarcastic so I’m being sarcastic back at you", //90
-"Believe me, there's so many students I would like to hit"
+"Believe me, there's so many students I would like to hit",
+"Well sucks to be you",
+"An A-grade student should know how to sight read",
+"Josiah! You're not fixing strings, you're breaking them"
 ];
