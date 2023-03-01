@@ -92,5 +92,9 @@ const quotes = [
 "Believe me, there's so many students I would like to hit",
 "Well sucks to be you",
 "An A-grade student should know how to sight read",
-"Josiah! You're not fixing strings, you're breaking them"
+"Josiah! You're not fixing strings, you're breaking them",
+"I'll put Renee in between Andleeb and Waleed: It could be a love triangle",
+"Why are ignite kids so mean? Because they're so average",
+"Are you the reason their relationship lasted 26hrs?",
+"Rashmi just had to respond to you"
 ];
