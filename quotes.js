@@ -96,5 +96,13 @@ const quotes = [
 "I'll put Renee in between Andleeb and Waleed: It could be a love triangle",
 "Why are ignite kids so mean? Because they're so average",
 "Are you the reason their relationship lasted 26hrs?",
-"Rashmi just had to respond to you"
+"Rashmi just had to respond to you",
+"Maybe there’s something else going on in the house",
+"*Flips of kid while scratching ear and while pushing up glasses*", //100!!
+"Stop farting",
+"Can you stop with that elitist behaviour? I am better than you.",
+"Old man Bruce",
+"Typical violin 1",
+"You can't have everything you want",
+"Arya serious?"
 ];
