@@ -104,5 +104,30 @@ const quotes = [
 "Old man Bruce",
 "Typical violin 1",
 "You can't have everything you want",
-"Arya serious?"
+"Arya serious?",
+"Renne are you a terrorist?",
+"Of course you know",
+"Are you going to a volleyball match or a drag show?",
+"Lucky he didn't call you eshay", //110
+"No wonder you got rejected",
+"How can I break your heart when you're sitting next to the love of your life?",
+"After all the attention I give you, this is how you treat me?",
+"I'm allergic to your BS",
+"Cow feces",
+"I smell CF from your table",
+"Do you need your bottle now? Is it feeding time?",
+"BS",
+"Oh dear",
+"*Dies from laughing*", //120
+"There's no space cos you already have someone else?",
+"Cap.",
+"Hi bored, I'm Mr Ang",
+"You wouldn't shut up, but when Renee comes to the front you shut up",
+"Eshay",
+"Stop talking CRAP, get on with it",
+"It's not always good to finish first",
+"Why can't you keep your hands off Renee?",
+"I'm not your bruh, I'm yout teacher",
+"Renne you jealous?", //130
+"*Shakes head disapprovingly*"
 ];
