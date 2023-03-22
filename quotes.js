@@ -80,7 +80,7 @@ const quotes = [
 "Well mode’s the most common one",
 "Can you stop being a dog?", //80
 "Stawwwp it!",
-"Casper you better make sure you do good in school or else you won’t get any babies",
+"Casper you better make sure you do good in school or else you won’t get any boobies",
 "Speaking to NOBODY IN PARTICULAR *stares at Renee*",
 "That was so 2015",
 "I will mentally mark your work",
