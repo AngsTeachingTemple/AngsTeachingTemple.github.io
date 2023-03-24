@@ -128,6 +128,7 @@ const quotes = [
 "It's not always good to finish first",
 "Why can't you keep your hands off Renee?",
 "I'm not your bruh, I'm yout teacher",
-"Renne you jealous?", //130
+"Renee you jealous?", //130
 "*Shakes head disapprovingly*"
+"Keep it in your pants"
 ];
