@@ -58,9 +58,6 @@
 </head>
 <body id="thingy">
 <div id="body">
-<h1 class='h1'>GREETINGS!</h1>
-<p class='p'>Welcome to Ang's Teaching Temple.</p>
-<p class='p'>Press the button below to continue.</p>
 </div>
 <button id="previous" onClick="previousPage()">Previous</button>
 <span class='span' id="page">1</span>
@@ -77,11 +74,13 @@ var text = "B"
 var page = 1
 var prefix = ""
 var pageData = [
-"<h1 class='h1'>HAPPY BIRTHDAY MR. ANG!!</h1><p class='p'>We hope you have an amazing birthday full of fun and joy!<img src='images/cake.jpg'></p>",
+"<h1 class='h1'>HAPPY BIRTHDAY MR. ANG!!</h1><p class='p'>We hope you have an amazing birthday full of fun and joy!</p>",
 "<h1 class='h1'>GREETINGS!</h1><p class='p'>Welcome to Ang's Teaching Temple.</p><p class='p'>Press the button below to continue.</p>", 
 "<h1 class='h1'>Ten CommANGments</h1><p class='p'>1. You must praise Ang, our Lord.</p><p class='p'>2. You must listen to Ang's divine wisdom.</p><p class='p'>3. Be smart.</p><p class='p'>4. Never talk back, or you will be exiled.</p><p class='p'>5. No matter what Ang says, you must agree.</p><p class='p'>6. If Ang enjoys/likes something or an activity, you must also enjoy it.</p><p class='p'>7. Being insulted by Ang is an honour.</p><p class='p'>8. Not finishing the teaching notes in a certain amount of time will get you punished.</p><p class='p'>9. You will be executed if you mispronounce or misspell Ang's name.</p><p class='p'>10. You will be subjected to a punishment worse than death if you insult, badmouth or attempt to injure Ang.</p>", 
 "<h1 class='h1'>CONTENTS</h1><p class='p'>Teaching Notes:&nbsp;&nbsp;&nbsp;<button onclick='viewTeachingNotes()'>View</button></p><p class='p'>Settings:&nbsp;&nbsp;&nbsp;<button onClick='viewSettings()'>View</button></p><p class='p'>Test:&nbsp;&nbsp;&nbsp;<button onClick='viewTest()'>View</button></p><p class='p'>Random Quote: <button onClick='viewQuotes()'>View</button></p><p class='p'>Website Changelog: <button onClick='viewChangelog()'>View</button><p class='p'>Ang Extension: <a class='button' href='angextension.zip' download>Download</a>"
 ];
+
+document.getElementById("body").innerHTML = pageData[0]
 
 var teachingNotes = [
 "<h1 class='h1'>Algebra Terminology 10/05/2022</h1><p><img src='images/100522.png'></p>",
