@@ -129,6 +129,6 @@ const quotes = [
 "Why can't you keep your hands off Renee?",
 "I'm not your bruh, I'm yout teacher",
 "Renee you jealous?", //130
-"*Shakes head disapprovingly*"
+"*Shakes head disapprovingly*",
 "Keep it in your pants"
 ];
