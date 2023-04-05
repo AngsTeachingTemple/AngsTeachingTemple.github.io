@@ -105,7 +105,7 @@ const quotes = [
 "Typical violin 1",
 "You can't have everything you want",
 "Arya serious?",
-"Renne are you a terrorist?",
+"Renee are you a terrorist?",
 "Of course you know",
 "Are you going to a volleyball match or a drag show?",
 "Lucky he didn't call you eshay", //110
@@ -132,5 +132,6 @@ const quotes = [
 "*Shakes head disapprovingly*",
 "Keep it in your pants",
 "Yeah, says you",
-"That sounds like a 'U' problem!"
+"That sounds like a 'U' problem!",
+"Ishan fell for Renee"
 ];
