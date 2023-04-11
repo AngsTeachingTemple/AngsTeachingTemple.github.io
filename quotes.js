@@ -133,5 +133,6 @@ const quotes = [
 "Keep it in your pants",
 "Yeah, says you",
 "That sounds like a 'U' problem!",
-"Ishan fell for Renee"
+"Ishan fell for Renee",
+"Can you shut the front door?"
 ];
