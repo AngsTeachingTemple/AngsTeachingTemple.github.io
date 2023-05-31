@@ -134,5 +134,7 @@ const quotes = [
 "Yeah, says you",
 "That sounds like a 'U' problem!",
 "Ishan fell for Renee",
-"Can you shut the front door?"
+"Can you shut the front door?",
+"It's not a room issue, its a skill issue",
+"Well, gg"
 ];
