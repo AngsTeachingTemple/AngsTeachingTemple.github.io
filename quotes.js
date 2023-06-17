@@ -136,5 +136,6 @@ const quotes = [
 "Ishan fell for Renee",
 "Can you shut the front door?",
 "It's not a room issue, its a skill issue",
-"Well, gg"
+"Well, gg",
+"Stop being a smart donkey"
 ];
