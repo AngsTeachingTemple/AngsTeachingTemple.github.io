@@ -138,5 +138,5 @@ const quotes = [
 "It's not a room issue, its a skill issue",
 "Well, gg",
 "Stop being a smart donkey",
-"Waleed I don’t think what you do with Renee is being halal"
+"Waleed I don’t think what you do with Renee is being halal" //140
 ];
