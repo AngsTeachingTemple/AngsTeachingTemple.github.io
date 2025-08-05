@@ -139,5 +139,6 @@ const quotes = [
 "Well, gg",
 "Stop being a smart donkey",
 "Waleed I don’t think what you do with Renee is being halal", //140
-"The real Mr Ang, was the Mr Ang we made along the way"
+"The real Mr Ang, was the Mr Ang we made along the way",
+"I'm not cheating, you're just a sore loser."
 ];
